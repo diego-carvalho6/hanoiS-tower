@@ -13,6 +13,7 @@ header h1{
     align-items: center;
     height: 50vh;
     margin: 40px auto;
+    position: relative;
 }
 .torre{
     display: flex;
@@ -80,4 +81,12 @@ footer{
 footer span{
     color: green;
     margin-left: 10px;
+}
+
+
+footer > button{
+    padding: 8px 35px;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 8px;
 }
