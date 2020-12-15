@@ -57,20 +57,31 @@ function eventDragOver(value){
 }
 function drop(value){
     value.preventDefault();
-    let count = value.target.clientWidth
-    console.log(count)
-    if ( value.target.className == "torre hanoi1" ) {
+    console.log(value)
+    
+    // let count = value.target.clientWidth
+    // console.log(count)
+
+    if ( value.target.className == "torre" ) {
         var data = value.dataTransfer.getData("Text");
+        
+        // let width = value.target.lastElementChild.clientWidth
+        // console.log(width)
+
         value.target.appendChild(document.getElementById(data));
       }
-    if ( value.target.className == "torre hanoi2" ) {
-      var data = value.dataTransfer.getData("Text");
-      value.target.appendChild(document.getElementById(data));
-    }
-    if ( value.target.className == "torre hanoi3" ) {
-        var data = value.dataTransfer.getData("Text");
-        value.target.appendChild(document.getElementById(data));
-    }
+    // if ( value.target.className == "torre" ) {
+    //   let data = value.dataTransfer.getData("Text");
+      
+    // //   let width = value.target.lastElementChild.clientWidth
+    // //   console.log(width)
+
+    //   value.target.appendChild(document.getElementById(data));
+    // }
+    // if ( value.target.className == "torre" ) {
+    //     var data = value.dataTransfer.getData("Text");
+    //     value.target.appendChild(document.getElementById(data));
+    // }
 }
 function disk(){
     
