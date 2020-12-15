@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     margin: 20px auto;
 }
 .torre{
@@ -14,17 +14,8 @@
     align-items: center;
     width: 33.3%;
     max-width: 300px;
-    height: 70%;
+    height: 100%;
     background-color: black;
-}
-.hanoi1{
-    
-}
-.hanoi2{
-    
-}
-.hanoi3{
-    
 }
 .disks{
     background-color: green;
@@ -47,5 +38,17 @@
 }
 .selected{
     display: flex;
+}
+.instructions{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: stretch;
+}
+.instructions p{
+    width: 33.3%;
+    text-align: center;
+    font-size: 30px;
 }
 

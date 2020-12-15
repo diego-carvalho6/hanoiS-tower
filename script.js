@@ -1,3 +1,8 @@
+const torre1 = document.getElementById("torre1")
+const torre2 = document.getElementById("torre2")
+const torre3 = document.getElementById("torre3")
+const contador = [0]
+
 function eventDrag(value){
     const target = value.currentTarget.lastElementChild
 
@@ -27,11 +32,16 @@ function drop(value){
             value.target.appendChild(document.getElementById(data));
         }
     }
+    console.log(torre3.childElementCount)
+    if(torre3.childElementCount === 4){
+        alert("parabens")
+    }
 }
-
-const torre1 = document.getElementById("torre1")
-const torre2 = document.getElementById("torre2")
-const torre3 = document.getElementById("torre3")
+function count(value){
+    let hanoi = document.getElementById("jogadas")
+    contador[0] += 1
+    jogadas.innerText = contador[0]
+}
 
 torre1.addEventListener("dragstart", eventDrag)
 torre2.addEventListener("dragstart", eventDrag)
@@ -39,4 +49,4 @@ torre3.addEventListener("dragstart", eventDrag)
 
 document.addEventListener("dragover", eventDragOver)
 document.addEventListener("drop", drop)
-  
+document.addEventListener("drop", count)
