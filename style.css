@@ -89,4 +89,32 @@ footer > button{
     background-color: #fff;
     border: 1px solid grey;
     border-radius: 8px;
+    margin-top: 20px;
 }
+
+
+@media screen and (max-width: 728px){
+    .disks{
+        height: 25px;
+    }
+    .disk1{
+        width: 99px;
+        
+    }
+    .disk2{
+        width: 77px;
+    }
+    .disk3{
+        width: 60px;
+    }
+    .disk4{
+        width: 46px;
+    }
+}
+
+
+/* 
+blue : 46
+red: 60
+pink : 77
+yellow:99 */
